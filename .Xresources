@@ -1,0 +1,4 @@
+xterm*faceName: Bold
+xterm*faceSize: 24
+xterm*background: black
+xterm*foreground: white
