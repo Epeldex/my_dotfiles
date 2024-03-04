@@ -1,0 +1,25 @@
+[battery]
+command=$HOME/.config/i3blocks/scripts/battery
+markup=pango
+background=#5e81ac
+color=#D8DEE9
+interval=1
+
+[volume-pulseaudio]
+command=$HOME/.config/i3blocks/scripts/volume-pulseaudio
+markup=pango
+interval=1
+
+[time]
+command=echo "<span foreground='#5e81ac' background='#2e3440' size='x-large'></span><span background='#5e81ac'> <span foreground='#2e3440' size='large'></span> <span size='medium' rise='1pt'>$(date +"%H:%M")</span> </span><span background='#5e81ac' foreground='#2e3440' size='x-large'></span>"
+markup=pango
+background=#5e81ac
+color=#D8DEE9
+interval=1
+
+[date]
+command=echo "<span size='medium' rise='-1pt'>$(date +"%d-%m-%y")</span>"; if [ $button ]; then orage -t; fi
+markup=pango
+interval=1
+
+
